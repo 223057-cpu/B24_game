@@ -506,8 +506,8 @@ function playerDrop() {
     if (collide(board, player)) {
         player.pos.y--;
         merge(board, player);
-        playerReset();
         clearLines();
+        playerReset();
     }
     dropCounter = 0;
 }
@@ -518,8 +518,8 @@ function playerHardDrop() {
     const ghostY = getGhostY();
     player.pos.y = ghostY;
     merge(board, player);
-    playerReset();
     clearLines();
+    playerReset();
     dropCounter = 0;
 }
 
